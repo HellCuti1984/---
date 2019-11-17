@@ -14,14 +14,21 @@
 		
     </head>
     <body>
-		
 		<header>
 			<div class="container">
-				<div class=""></div>
+				<img class="logo" src="{{ URL::asset('img/newspaper.png') }}" />
 				<div class="papersName">СТУДЕНЧЕСКАЯ ГАЗЕТА</div>
+				<img class="login" src="{{ URL::asset('img/user.png') }}" />
+				
+				<div class="newsSearch">
+					<form action="" method="post">
+						<input type="text" class="search"/>
+						<input type="submit" class="searchButton"/>
+					</form>
+				</div>
 			</div>
 		</header>
-		<div class="subhead">Нижний Тагил - <?=date('d.m.y')?></div>
+		
 		<div class="content">
 			@yield('content')
 		</div>
